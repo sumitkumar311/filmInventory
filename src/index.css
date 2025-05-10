@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #c3c3c3;
+    border-radius: 10px;
+}
+@layer utilities {
+    .line-clamp-3 {
+      display: -webkit-box;
+      --webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
